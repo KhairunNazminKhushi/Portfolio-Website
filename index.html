@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khairun Nazmin Khushi | Software Engineer &amp; Full Stack Developer</title>
+<meta name="description" content="Portfolio of Khairun Nazmin Khushi — Software Engineering student, Full Stack Developer, AI & Machine Learning enthusiast.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-mark">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR GLOW (decorative, desktop only) ============ -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">KN<span>K</span></a>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+        <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home">
+    <div class="hero-blobs" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Khairun Nazmin Khushi</h1>
+        <h2 class="hero-role">
+          <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Software Engineering student who loves turning ideas into functional, engaging,
+          and visually appealing digital experiences — from full-stack apps to
+          AI-powered systems.
+        </p>
+        <div class="hero-actions">
+          <a href="files/resume.pdf" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/KhairunNazminKhushi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/khairun-nazmin-khushi-72a5403a8/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:khairunnazminkhushi@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="profile-ring">
+          <div class="profile-photo" id="profilePhoto">
+            <img src="images/profile.jpg" alt="Khairun Nazmin Khushi" class="photo-img">
+          </div>
+          <div class="orbit-badge orbit-badge-1"><i class="fa-brands fa-react"></i></div>
+          <div class="orbit-badge orbit-badge-2"><i class="fa-brands fa-python"></i></div>
+          <div class="orbit-badge orbit-badge-3"><i class="fa-brands fa-node-js"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Get to know me</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="about-photo" id="aboutPhoto">
+            <img src="images/profile.jpg" alt="Khairun Nazmin Khushi" class="photo-img">
+          </div>
+          <div class="about-photo-glow"></div>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="about-text">
+            I'm a passionate Software Engineering student with a deep curiosity for how
+            technology can solve real-world problems and improve everyday life. I love
+            transforming ideas into functional, engaging, and visually appealing digital
+            experiences.
+          </p>
+
+          <div class="info-cards">
+            <div class="info-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Degree</span>
+                <span class="info-value">B.Sc. Software Engineering</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Dhaka, Bangladesh</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <span class="info-label">Focus</span>
+                <span class="info-value">Full Stack &amp; AI/ML</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">khairunnazminkhushi@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="6">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Certificates</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Technologies Learned</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Leadership Experiences</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION SECTION ============ -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Academic journey</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Jun. 2024 — Jun. 2028</span>
+            <h3 class="timeline-title">Daffodil International University</h3>
+            <p class="timeline-subtitle">B.Sc. in Software Engineering</p>
+            <p class="timeline-location"><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Jan. 2021 — Jan. 2023</span>
+            <h3 class="timeline-title">Lakshmipur Government College</h3>
+            <p class="timeline-subtitle">Higher Secondary Certificate (Science)</p>
+            <p class="timeline-location"><i class="fa-solid fa-location-dot"></i> Lakshmipur, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">What I work with</p>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>C</li><li>Python</li><li>Java</li><li>JavaScript</li><li>SQL</li><li>Bash</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Frameworks &amp; Libraries</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>React</li><li>Node.js</li><li>Express</li><li>Flask</li><li>Streamlit</li>
+            <li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>OpenCV</li><li>YOLO</li><li>MediaPipe</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-database"></i>
+            <h3>Databases</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>SQLite</li><li>MongoDB</li><li>MariaDB</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-toolbox"></i>
+            <h3>Tools &amp; Technologies</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Git</li><li>GitHub</li><li>Docker</li><li>Linux</li><li>Oracle Cloud</li>
+            <li>Vercel</li><li>Supabase</li>
+          </ul>
+        </div>
+
+        <div class="skill-card skill-card-wide reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-star"></i>
+            <h3>Core Competencies</h3>
+          </div>
+          <div class="competency-bars">
+            <div class="competency">
+              <div class="competency-top"><span>Full Stack Development</span><span>92%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="competency">
+              <div class="competency-top"><span>AI Integration</span><span>88%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="competency">
+              <div class="competency-top"><span>Machine Learning</span><span>85%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="competency">
+              <div class="competency-top"><span>Computer Vision</span><span>80%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="competency">
+              <div class="competency-top"><span>System Design</span><span>78%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Selected work</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-list">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <div class="media-placeholder image-placeholder">
+              <img src="images/clusterpilot.jpg" alt="ClusterPilot project screenshot" class="media-img">
+            </div>
+            <div class="media-placeholder video-placeholder">
+              <video src="videos/clusterpilot-demo.mp4" poster="images/clusterpilot.jpg" class="media-video" controls preload="metadata"></video>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-date">Jan. 2026 — Present</span>
+            <h3 class="project-title">ClusterPilot</h3>
+            <div class="project-badges">
+              <span class="badge">Python</span>
+              <span class="badge">Kubernetes</span>
+              <span class="badge">Docker</span>
+              <span class="badge">Prometheus</span>
+              <span class="badge">Redis</span>
+            </div>
+            <p class="project-desc">
+              Built an autonomous GPU resource optimization platform for Kubernetes-based
+              AI clusters.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-check"></i> Idle GPU forecasting</li>
+              <li><i class="fa-solid fa-check"></i> Safe resource reclamation</li>
+              <li><i class="fa-solid fa-check"></i> Priority-based workload scheduling</li>
+              <li><i class="fa-solid fa-check"></i> GPU monitoring</li>
+              <li><i class="fa-solid fa-check"></i> Cost analytics dashboard</li>
+              <li><i class="fa-solid fa-check"></i> Cluster management</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-small btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reverse reveal">
+          <div class="project-media">
+            <div class="media-placeholder image-placeholder">
+              <img src="images/biograph.jpg" alt="BioGraph project screenshot" class="media-img">
+            </div>
+            <div class="media-placeholder video-placeholder">
+              <video src="videos/biograph-demo.mp4" poster="images/biograph.jpg" class="media-video" controls preload="metadata"></video>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-date">NASA Space Apps Challenge — Team Project</span>
+            <h3 class="project-title">BioGraph</h3>
+            <div class="project-badges">
+              <span class="badge">AI Model</span>
+              <span class="badge">NASA Dataset</span>
+              <span class="badge">Machine Learning</span>
+            </div>
+            <p class="project-desc">
+              Developed and trained an AI model focused on NASA information analysis and
+              confidence score prediction.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-check"></i> AI Model</li>
+              <li><i class="fa-solid fa-check"></i> NASA Dataset</li>
+              <li><i class="fa-solid fa-check"></i> Confidence Score</li>
+              <li><i class="fa-solid fa-check"></i> Information Analysis</li>
+              <li><i class="fa-solid fa-check"></i> Machine Learning</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-small btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-media">
+            <div class="media-placeholder image-placeholder">
+              <img src="images/smart-housing.jpg" alt="Smart Housing System project screenshot" class="media-img">
+            </div>
+            <div class="media-placeholder video-placeholder">
+              <video src="videos/smart-housing-demo.mp4" poster="images/smart-housing.jpg" class="media-video" controls preload="metadata"></video>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-date">Personal Project</span>
+            <h3 class="project-title">Smart Housing System</h3>
+            <div class="project-badges">
+              <span class="badge">IoT</span>
+              <span class="badge">Sensors</span>
+              <span class="badge">Automation</span>
+            </div>
+            <p class="project-desc">
+              Designed an intelligent smart home system featuring motion detection,
+              ultrasonic parking assistance, and theft detection.
+            </p>
+            <ul class="project-features">
+              <li><i class="fa-solid fa-check"></i> Motion Detection</li>
+              <li><i class="fa-solid fa-check"></i> Ultrasonic Parking Sensor</li>
+              <li><i class="fa-solid fa-check"></i> Theft Detection</li>
+              <li><i class="fa-solid fa-check"></i> Smart Monitoring</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-small btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS SECTION ============ -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Recognition</p>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <p>Team Leader of ClusterPilot</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <p>Team Leader of NASA Space Apps Challenge Project</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <p>Leadership &amp; Team Management Experience</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <p>Multiple Technology Certifications</p>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+          <p>Passionate Problem Solver</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES SECTION ============ -->
+  <section class="certificates section" id="certificates">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Verified learning</p>
+        <h2 class="section-title">Certificates</h2>
+      </div>
+
+      <div class="certificates-grid">
+        <div class="certificate-card reveal" data-cert="1">
+          <div class="certificate-image">
+            <img src="images/certificate-1.jpg" alt="NASA Space Apps Challenge certificate" class="cert-img">
+          </div>
+          <div class="certificate-info">
+            <h3>NASA Space Apps Challenge</h3>
+            <p class="cert-org">AI/ML</p>
+            <p class="cert-date">October 2025</p>
+          </div>
+        </div>
+        <div class="certificate-card reveal" data-cert="2">
+          <div class="certificate-image">
+            <img src="images/certificate-2.jpg" alt="OOPs in Java certificate" class="cert-img">
+          </div>
+          <div class="certificate-info">
+            <h3>OOPs in Java</h3>
+            <p class="cert-org">OOP</p>
+            <p class="cert-date">March 2026</p>
+          </div>
+        </div>
+        <div class="certificate-card reveal" data-cert="3">
+          <div class="certificate-image">
+            <img src="images/certificate-3.jpg" alt="Oitijjher Haat certificate" class="cert-img">
+          </div>
+          <div class="certificate-info">
+            <h3>Oitijjher Haat</h3>
+            <p class="cert-org">District Representation</p>
+            <p class="cert-date">Season 4, 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Let's talk</p>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name">
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com">
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="formSuccess">Your message has been sent successfully!</p>
+        </form>
+
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/KhairunNazminKhushi" target="_blank" rel="noopener">github.com/KhairunNazminKhushi</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/khairun-nazmin-khushi-72a5403a8/" target="_blank" rel="noopener">linkedin.com/in/khairun-nazmin-khushi</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:khairunnazminkhushi@gmail.com">khairunnazminkhushi@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+8801621328952">01621328952</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span class="contact-label">Location</span>
+              <span>Dhaka, Bangladesh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="footer-name">Khairun Nazmin Khushi</span>
+      <span class="footer-role">Software Engineering Student</span>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/KhairunNazminKhushi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/khairun-nazmin-khushi-72a5403a8/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <p class="footer-copyright">&copy; <span id="year"></span> Khairun Nazmin Khushi. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <div class="lightbox-content">
+    <div class="lightbox-image" id="lightboxImage">
+      <img src="" alt="" id="lightboxImg" class="lightbox-img">
+      <span id="lightboxLabel">Certificate</span>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
